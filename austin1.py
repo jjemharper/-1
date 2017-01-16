@@ -1,3 +1,4 @@
+
 def name(title):
     with open (title+'.txt', 'r') as f:
        text = f.read()
@@ -8,7 +9,7 @@ def ous():
     b = 0
     c = 0
     for i, word in enumerate (words):
-      if words[i].count("ous"):
+      if words[i][-3:]=="ous":
        b = b + len(words[i])
        c = c + 1
     print(b / c)
